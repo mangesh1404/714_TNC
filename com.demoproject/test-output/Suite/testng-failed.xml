@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="GC test(failed)">
+  <test name="GC Test(failed)">
     <parameter name="port" value="4455"/>
     <classes>
-      <class name="com.tests.SeleniumGrid">
+      <class name="com.tests.SeleniumGrid_New">
         <methods>
+          <include name="loginTest"/>
           <include name="setup"/>
-          <include name="test01"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- com.tests.SeleniumGrid -->
+      </class> <!-- com.tests.SeleniumGrid_New -->
     </classes>
-  </test> <!-- GC test(failed) -->
+  </test> <!-- GC Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
